@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rizka Akmalia's Portofolio</title>
 
     <!-- CSS External File Link -->
     <link rel="stylesheet" href="css/style.css">
@@ -13,16 +13,16 @@
 </head>
 <body>
     <!-- Header -->
-    <header class="main-header">
+    <header class="main-header" style="background-color: blue;">
         <!-- Logo -->
         <div class="logo"></div>
 
         <!-- Navigation Bar -->
         <nav>
-            <a class="border rounded p-2" href="#home-page">Home</a>
-            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
-            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
-            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+            <a class="nav-button" href="#home-page">Home</a>
+            <a class="nav-button" href="#our-profile-page">Our Profile</a>
+            <a class="nav-button" href="#portfolio-page">Portfolio</a>
+            <a class="nav-button" href="#message-us-page">Message Us</a>
         </nav>
     </header>
 
@@ -31,51 +31,162 @@
     <!-- Main Content -->
     <main>
         <!-- Home Page -->
-        <section id="home-page" class="content-section min-h-[500px] text-center">
-            <h2 class="text-3xl font-bold mb-4" id="welcome-speech">Welcome to My Website</h2>
-            <p class="mb-4">This is a sample paragraph to demonstrate the structure of the main content area. You can replace this text with your own content.</p>
+        <section id="home-page" class="min-h-[800px] flex flex-col items-center justify-center text-center px-4 md:px-8 lg:px-16">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="welcome-greeting text-4xl md:text-5xl lg:text-6xl font-bold mb-6 md:mb-8" id="welcome-speech">
+                    Hello, We are ZEROBASEONE🔥
+                </h2>
+                <p class="intro-text text-lg md:text-xl leading-relaxed mb-6 max-w-3xl mx-auto"> 
+                    We are Zerobaseone (ZB1), a nine-member K-pop group formed through Boys Planet.
+                    Our journey began in July 2023, and we've been growing ever since with music, passion, and the support of our fans.
+                    The name "Zerobaseone" signifies a journey from zero to one, a symbolic beginning that reflects our group's commitment to growth, 
+                    unity, and artistic excellence. This is our beginning, and we're excited to share it with you 🚀
+                </p>
+            </div>
         </section>
 
         <!-- Our Profile Page -->
-        <section id="our-profile-page" class="content-section min-h-[500px] text-center">
-            <h2 class="text-3xl font-bold mb-4">About Me</h2>
-            <p class="mb-4">My Name is Icha, statistics graduate from UNS</p>
+        <section id="our-profile-page" class="min-h-[800px] mt-20 mb-20 text-center">
+            <h2 class="text-5xl font-bold mb-10">About Us</h2>
+
+            <!-- Members -->
+            <div class="members-container text-center">
+                <figure class="members-profile mt-10">
+                    <img src="assets/jiwoong.jpeg" class="w-[100px] h-[100px] object-cover rounded-full"/>
+                    <figcaption class="text-sm font-semibold mt-2" style="font-size: 20px;">Kim Jiwoong</figcaption>
+                </figure>
+                <figure class="members-profile mt-10">
+                    <img src="assets/zhanghao.jpeg" class="w-[100px] h-[100px] object-cover rounded-full"/>
+                    <figcaption class="text-sm font-semibold mt-2" style="font-size: 20px;">Zhang Hao</figcaption>
+                </figure>
+                <figure class="members-profile mt-10">
+                    <img src="assets/hanbin.jpeg" class="w-[100px] h-[100px] object-cover rounded-full"/>
+                    <figcaption class="text-sm font-semibold mt-2" style="font-size: 20px;">Sung Hanbin</figcaption>
+                </figure>
+                <figure class="members-profile mt-10">
+                    <img src="assets/matthew.jpeg" class="w-[100px] h-[100px] object-cover rounded-full"/>
+                    <figcaption class="text-sm font-semibold mt-2" style="font-size: 20px;">Seok Matthew</figcaption>
+                </figure>
+                <figure class="members-profile mt-10">
+                    <img src="assets/taerae.jpeg" class="w-[100px] h-[100px] object-cover rounded-full"/>
+                    <figcaption class="text-sm font-semibold mt-2" style="font-size: 20px;">Kim Taerae</figcaption>
+                </figure>
+                <figure class="members-profile mt-10">
+                    <img src="assets/ricky.jpeg" class="w-[100px] h-[100px] object-cover rounded-full"/>
+                    <figcaption class="text-sm font-semibold mt-2" style="font-size: 20px;">Ricky</figcaption>
+                </figure>
+                <figure class="members-profile mt-10">
+                    <img src="assets/gyuvin.jpeg" class="w-[100px] h-[100px] object-cover rounded-full"/>
+                    <figcaption class="text-sm font-semibold mt-2" style="font-size: 20px;">Kim Gyuvin</figcaption>
+                </figure>
+                <figure class="members-profile mt-10">
+                    <img src="assets/gunwook.jpeg" class="w-[100px] h-[100px] object-cover rounded-full"/>
+                    <figcaption class="text-sm font-semibold mt-2" style="font-size: 20px;">Park Gunwook</figcaption>
+                </figure>
+                <figure class="members-profile mt-10">
+                    <img src="assets/yujin.jpeg" class="w-[100px] h-[100px] object-cover rounded-full"/>
+                    <figcaption class="text-sm font-semibold mt-2" style="font-size: 20px;">Han Yujin</figcaption>
+                </figure>  
+            </div>
         </section>
 
         <!-- Portfolio Page -->
-        <section id="portfolio-page" class="content-section min-h-[500px] text-center">
-            <h2 class="text-3xl font-bold mb-4">My Portfolio</h2>
-            <p class="mb-4">Take a look at our diverse projects</p>
+        <section id="portfolio-page" class="content-section min-h-[800px] text-center">
+            <h2 class="text-5xl font-bold mb-4">My Portfolio</h2>
+            <p class="mb-4">Take a look at our journey!</p>
+
+            <!-- Discography -->
+            
+            <!-- Music Videos -->
+            <h3>Music Videos</h3>
+            <ul>
+                <li class="mv-card" data-video-id="iconik_mv">
+                    <img src= "assets/iconik_mv_card.jpg" alt="Iconik">
+                </li>
+            </ul>
+
+            <!-- Our Socials -->
         </section>
         
-        <!-- Message Us -->
-        <section id="message-us-page" class="content-section min-h-[500px]">
+        <!-- Message Me -->
+        <section id="message-us-page" class="min-h-[800px]">
             <header class="text-center mb-6">
-                <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+                <h2 class="text-5xl font-bold mb-10">Message Me</h2>
             </header>
             
-            <form class="space-y-4">
-                <div class="contact-form textarea w-full max-w-lg mx-auto flex flex-col gap-4">
-                    <label class="block mb-1" for="name">Name:</label>
-                    <input class="border rounded p-2 w-full" type="text" id="name" name="name" required>
-                </div>
-                <div>
-                    <label class="block mb-1" for="email">Email:</label>
-                    <input class="border rounded p-2 w-full" type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label class="block mb-1" for="message">Message:</label>
-                    <textarea class="border rounded p-2 w-full" id="message" name="message" rows="4" required></textarea>
-                </div>
-                <button class="bg-blue-500 text-white rounded p-2" type="submit">Send Message</button>
-            </form>
+            <div class="max-w-5xl mx-auto md:flex md:items-start md:gap-8 px-4">
+                <!-- Form Contact Me -->
+                <form class="w-full md:w-1/2 space-y-4" autocomplete="off">
+                    <!-- Name -->
+                    <div class="contact-form textarea w-full max-w-lg mx-auto flex flex-col gap-4">
+                        <label class="block mb-1" for="name">Name:</label>
+                        <input class="border rounded p-2 w-full" type="text" id="name" name="name" required>
+                    </div>
+
+                    <!-- DoB -->
+                    <div class="contact-form textarea w-full max-w-lg mx-auto flex flex-col gap-4">
+                        <label class="block mb-1" for="dob">Date of Birth:</label>
+                        <input class="border rounded p-2 w-full" type="date" id="dob" name="dob" required>
+                    </div>
+
+                    <!-- Gender -->
+                    <div class="contact-form textarea w-full max-w-lg mx-auto flex items-center gap-4">
+                        <label class="block w-20" for="gender">Gender:</label>
+                        <!-- Male -->
+                        <label class="inline-flex items-center">
+                            <input class="border rounded h-4 w-4" type="radio" name="gender" value="Male">
+                            <span class="ml-2 leading-none">Male</span>
+                        </label>
+                        <!-- Female -->
+                        <label class="inline-flex items-center">
+                            <input class="border rounded h-4 w-4" type="radio" name="gender" value="Female">
+                            <span class="ml-2 leading-none">Female</span>
+                        </label>
+                    </div>
+
+                    <!-- Message -->
+                    <div class="contact-form textarea w-full max-w-lg mx-auto flex flex-col gap-4">
+                        <label class="block mb-1" for="message">Message:</label>
+                        <textarea class="border rounded p-2 w-full" id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Button Send massage and Reset Form -->
+                    <button class="bg-blue-500 text-white rounded p-2 w-[32%] inline-block" type="submit">Send Message</button>
+                    <button class="bg-gray-500 text-white rounded p-2 w-[32%] inline-block ml-[4%]" type="reset">Reset </button>
+                </form>
+
+                <!-- Live Preview -->
+                <aside id = "message-preview" class="w-full md:w-1/2 mt-8 md:mt-0">
+                    <div class="border rounded p-4 w-full space-y-4">
+                        <div class="block mb-1 mt-1">
+                            <label>Name:</label>
+                            <p id="preview-name" class="mt-1 mb-1 text-gray-800">—</p>
+                        </div>
+                        <div class="block mb-1 mt-1">
+                            <label>Date of Birth:</label>
+                            <p id="preview-dob" class="mt-1 mb-1 text-gray-800">—</p>
+                        </div>
+                        <div class="block mb-1 mt-1">
+                            <label>Gender:</label>
+                            <p id="preview-gender" class="mt-1 mb-1 text-gray-800">—</p>
+                        </div>
+                        <div class="block mb-1 mt-1">
+                            <label>Massage:</label>
+                            <p id="preview-message" class="mt-1 mb-1 text-gray-800">—</p>
+                        </div>
+                    </div>
+                </aside>
+
+                <script src="js/script.js"></script>
+            </div>
+            
     </main>
 
     <hr/>
 
     <!-- Footer -->
     <footer>
-        <p class="text-center p-4">2024 Your Company. All rights reserved</p>
+        <p class="text-center p-4">© 2025 Rizka Akmalia Portfolio. All rights reserved.</p>
     </footer>
 
     <!-- JS External File Link -->
