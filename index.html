@@ -7,16 +7,76 @@
 
     <!-- CSS External File Link -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS  CDN Link-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <!-- Header -->
-     <head></head>
+    <header class="main-header">
+        <!-- Logo -->
+        <div class="logo"></div>
+
+        <!-- Navigation Bar -->
+        <nav>
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portfolio-page">Portfolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
+
+    <hr/>
 
     <!-- Main Content -->
-    <main></main>
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="content-section min-h-[500px] text-center">
+            <h2 class="text-3xl font-bold mb-4" id="welcome-speech">Welcome to My Website</h2>
+            <p class="mb-4">This is a sample paragraph to demonstrate the structure of the main content area. You can replace this text with your own content.</p>
+        </section>
+
+        <!-- Our Profile Page -->
+        <section id="our-profile-page" class="content-section min-h-[500px] text-center">
+            <h2 class="text-3xl font-bold mb-4">About Me</h2>
+            <p class="mb-4">My Name is Icha, statistics graduate from UNS</p>
+        </section>
+
+        <!-- Portfolio Page -->
+        <section id="portfolio-page" class="content-section min-h-[500px] text-center">
+            <h2 class="text-3xl font-bold mb-4">My Portfolio</h2>
+            <p class="mb-4">Take a look at our diverse projects</p>
+        </section>
+        
+        <!-- Message Us -->
+        <section id="message-us-page" class="content-section min-h-[500px]">
+            <header class="text-center mb-6">
+                <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+            </header>
+            
+            <form class="space-y-4">
+                <div>
+                    <label class="block mb-1" for="name">Name:</label>
+                    <input class="border rounded p-2 w-full" type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label class="block mb-1" for="email">Email:</label>
+                    <input class="border rounded p-2 w-full" type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label class="block mb-1" for="message">Message:</label>
+                    <textarea class="border rounded p-2 w-full" id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button class="bg-blue-500 text-white rounded p-2" type="submit">Send Message</button>
+            </form>
+    </main>
+
+    <hr/>
 
     <!-- Footer -->
-    <footer></footer>
+    <footer>
+        <p class="text-center p-4">2024 Your Company. All rights reserved</p>
+    </footer>
 
     <!-- JS External File Link -->
     <script src="js/script.js"></script>
