@@ -1,5 +1,5 @@
 // Display welcome message
-// welcomeMessage();
+welcomeMessage();
 
 // Function welcome message
 function welcomeMessage() {
