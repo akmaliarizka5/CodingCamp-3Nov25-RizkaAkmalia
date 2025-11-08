@@ -3,7 +3,7 @@
     width: 100px;
     background-color: azure;
     border-radius: 100%;
-    background-image: url("..//assets/logo.jpeg");
+    background-image: url("..//assets/logo/logo.jpg");
     background-size: cover;
 }
 
@@ -18,7 +18,7 @@
     border: 2px solid #ccc; 
     border-radius: 8px;        
     padding: 0.5rem 1rem;
-    background-image: linear-gradient(to right, #7d8af1, #6e67d9);
+    background-image: linear-gradient(to right, #2d2f3d, #373738);
     color: white;
     font-size: 20px;
     font-weight: 600;             
@@ -28,7 +28,7 @@
 }
 
 #home-page{
-    background-image: url("../assets/home_page.jpeg");
+    background-image: url("../assets/logo/home_page.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,4 +100,113 @@
     box-sizing: border-box;
     font-size: 1rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fandom-section {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.discography-name{
+    font-size: 1.25rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.album-card {
+    background: #1a1f3a;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.album-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(74, 158, 255, 0.3);
+}
+
+.album-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.album-title {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.album-date {
+    margin-top: 8px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    color: #b0b0b0;
+    text-align: center;
+    padding: 0 15px;
+}
+
+.mv-thumbnail {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 20px;
+}
+
+.mv-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    object-fit: fill;
+    text-align: left;
+}
+
+.portfolio-name{
+    font-size: 1.25rem;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.socials-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media-links{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.social-media-links img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+.socials-card {
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.socials-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(74, 158, 255, 0.3);
+}
+
+.preview-style {
+    background-color: rgb(247, 247, 247);
 }
